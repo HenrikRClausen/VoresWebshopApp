@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Styles/VoresWebshop_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>@Html.ActionLink("Hjem", "Index", "Produkt")</li>
+            <li>@Html.ActionLink("Ordrer", "Index", "Ordre")</li>
+            <li>@Html.ActionLink("Kontakt", "Index", "Kontakt")</li>
+            <li>@Html.ActionLink("Om os", "Index", "OmOs")</li>
+        </ul>
+    </nav>
+    <div style="background-color:aqua; border-color:blueviolet; border-width: 3px;">
+        <h1>
+            Dette er VoresWebshop
+        </h1>
+    </div>
+    <div id="body" class="main_content">
+        @RenderBody()
+    </div>
+</body>
+</html>

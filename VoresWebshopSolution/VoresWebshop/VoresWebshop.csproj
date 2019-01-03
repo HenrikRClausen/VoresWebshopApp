@@ -95,10 +95,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Styles\VoresWebshop_style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\KontaktController.cs" />
+    <Compile Include="Controllers\OmOsController.cs" />
     <Compile Include="Controllers\ProduktController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -114,11 +117,10 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Produkt\Create.cshtml" />
-    <Content Include="Views\Produkt\Delete.cshtml" />
-    <Content Include="Views\Produkt\Details.cshtml" />
-    <Content Include="Views\Produkt\Edit.cshtml" />
     <Content Include="Views\Produkt\Index.cshtml" />
+    <Content Include="Views\Shared\_homepageBasis.cshtml" />
+    <Content Include="Views\OmOs\Index.cshtml" />
+    <Content Include="Views\Kontakt\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

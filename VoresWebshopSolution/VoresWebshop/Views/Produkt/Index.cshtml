@@ -1,17 +1,12 @@
 ﻿@model IEnumerable<VoresWebshop.Models.Produkt>
 
 @{
-    Layout = null;
+    ViewBag.Title = "Produkt side";
+    Layout = "~/Views/Shared/_homepageBasis.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
 <body>
+    <h2>Produkter</h2>
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
@@ -68,4 +63,3 @@
     
     </table>
 </body>
-</html>
