@@ -102,6 +102,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\KontaktController.cs" />
     <Compile Include="Controllers\OmOsController.cs" />
+    <Compile Include="Controllers\OrdrerController.cs" />
     <Compile Include="Controllers\ProduktController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -121,6 +122,8 @@
     <Content Include="Views\Shared\_homepageBasis.cshtml" />
     <Content Include="Views\OmOs\Index.cshtml" />
     <Content Include="Views\Kontakt\Index.cshtml" />
+    <Content Include="Views\Ordrer\Index.cshtml" />
+    <Content Include="Views\Ordrer\Kurv.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

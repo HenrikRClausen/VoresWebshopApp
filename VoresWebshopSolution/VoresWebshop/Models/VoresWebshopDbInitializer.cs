@@ -57,6 +57,20 @@ namespace VoresWebshop.Models {
                             Oprettet = DateTime.Today,
                             Antal = 4,
                             StykPris = produkter[0].Pris * 0.80m
+                        },
+                        new OrdreLinie
+                        {
+                            ProduktID = 1,
+                            Oprettet = DateTime.Today,
+                            Antal = 2,
+                            StykPris = produkter[0].Pris
+                        },
+                        new OrdreLinie
+                        {
+                            ProduktID = 1,
+                            Oprettet = DateTime.Today,
+                            Antal = 8,
+                            StykPris = produkter[0].Pris * 0.5m
                         }
                     }
                 }

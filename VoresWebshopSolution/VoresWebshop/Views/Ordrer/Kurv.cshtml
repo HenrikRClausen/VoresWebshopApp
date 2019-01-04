@@ -1,0 +1,52 @@
+﻿@model IEnumerable<VoresWebshop.Models.OrdreLinie>
+
+@{
+    ViewBag.Title = "Kurv";
+    Layout = "~/Views/Shared/_homepageBasis.cshtml";
+}
+
+<h2>Kurv</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrdreID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProduktID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Oprettet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StykPris)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrdreID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProduktID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Oprettet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StykPris)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OrdreLinieID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OrdreLinieID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OrdreLinieID })
+        </td>
+    </tr>
+}
+
+</table>

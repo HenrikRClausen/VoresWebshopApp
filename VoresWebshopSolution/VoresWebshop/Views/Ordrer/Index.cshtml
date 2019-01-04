@@ -1,0 +1,58 @@
+﻿@model IEnumerable<VoresWebshop.Models.Ordre>
+
+@{
+    ViewBag.Title = "Ordrer";
+    Layout = "~/Views/Shared/_homepageBasis.cshtml";
+}
+
+<h2>Ordrer</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BrugerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Oprettet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Godkendt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Afsendt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Afsluttet)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BrugerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Oprettet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Godkendt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Afsendt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Afsluttet)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OrdreID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OrdreID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OrdreID })
+        </td>
+    </tr>
+}
+
+</table>
